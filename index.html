@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+        }
+        .header-class {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            align-items: center;
+            list-style: none;
+            padding: 0.3em;
+
+        }
+
+        .header-class li {
+            padding-right: 2em;
+        }
+
+        .sign-in {
+           background: #2b7de9;
+           color: #fff;
+           border: 1px solid transparent;
+           padding: 9px 23px;
+           text-align: center;
+           vertical-align: middle;
+           border-radius: 4px;
+           margin-right: 2em;
+        }
+
+        .sign-in:hover{
+            box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);;
+        }
+
+        .main-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;      
+
+        }
+
+        .search {
+            padding: 20px;
+            max-height: 160px;
+        }
+
+        .search-bar {
+            background: #fff;
+            display: flex;
+            flex: 1;
+            border: 1px solid #dfe1e5;
+            box-shadow: none;
+            border-radius: 24px;
+            height: 44px;
+            margin: 0 auto;
+            padding: 5px 8px 0px 400px;
+            max-width: 584px;
+        }
+        .search-bar:hover {
+            background-color: #fff;
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+
+        }
+
+        /* .additional-contents {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        } */
+
+        .googlesearch {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-right: 40px;
+        }
+        .g-search {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .g-search:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f8f9fa;
+            color: #202124;
+        }
+
+        .feeling-lucky {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .feeling-lucky:hover {
+            cursor: pointer;
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f8f9fa;
+            color: #202124;
+        }
+
+    </style>
+      
+    <title>Google Homepage</title>
+</head>
+<body>
+    <div class="body">
+    <div class="header">
+        <ul class="header-class">
+            <li>Gmail</li>
+            <li>Images</li>
+            <button class="sign-in">Sign In</button>
+        </ul>
+        </div>
+        <div class="main-body">
+            <img src="google.png">
+        </div>
+        <div class="search">
+        <input type="search" class="search-bar" name="search" id="search">     
+        <div class="additional-content">
+            <div class="googlesearch">
+                <input type="submit" class="g-search" value="Google Search">
+                 &nbsp
+                <input type="submit" class="feeling-lucky" value="Feeling Lucky">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
